@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fastapi-validation-error-handler"
+version = "0.1.0"
+description = "Custom validation error handler for FastAPI that returns HTTP 400 status codes with structured JSON responses"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Rohan Bokadiya", email = "rohanbokadiya855@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Internet :: WWW/HTTP",
+]
+keywords = ["fastapi", "validation", "error", "handler", "http"]
+dependencies = [
+    "fastapi>=0.68.0",
+    "pydantic>=1.8.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bukscom/fastapi-validation-error-handler"
+"Bug Tracker" = "https://github.com/bukscom/fastapi-validation-error-handler/issues"
+"Source Code" = "https://github.com/bukscom/fastapi-validation-error-handler"
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "fastapi_validation_error_handler/**/*.py",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    ".",
+]
