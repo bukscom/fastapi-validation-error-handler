@@ -48,10 +48,10 @@ def test_openapi_schema_status_code(client):
     error_response = responses["400"]
     assert "content" in error_response
     assert "application/json" in error_response["content"]
-    
+
     # The schema might contain an example or schema object
     content_json = error_response["content"]["application/json"]
-    
+
     # If example is present, check it
     if "example" in content_json:
         example = content_json["example"]

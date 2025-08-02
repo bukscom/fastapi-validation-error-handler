@@ -4,11 +4,13 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/fastapi-validation-error-handler.svg)](https://pypi.org/project/fastapi-validation-error-handler/)
 [![License](https://img.shields.io/github/license/bukscom/fastapi-validation-error-handler.svg)](https://github.com/bukscom/fastapi-validation-error-handler/blob/main/LICENSE)
 
-A custom validation error handler for FastAPI that returns HTTP 400 status codes with structured JSON responses and updates OpenAPI documentation accordingly.
+A custom validation error handler for FastAPI that returns HTTP 400 status codes with structured
+JSON responses and updates OpenAPI documentation accordingly.
 
 ## Why Use This Package?
 
-By default, FastAPI returns HTTP 422 (Unprocessable Entity) status codes for validation errors. However, many API designs prefer using HTTP 400 (Bad Request) for all client-side validation errors.
+By default, FastAPI returns HTTP 422 (Unprocessable Entity) status codes for validation errors.
+However, many API designs prefer using HTTP 400 (Bad Request) for all client-side validation errors.
 
 This package provides:
 
@@ -89,7 +91,8 @@ For nested data structures, field paths are formatted as dot-notation with array
 
 ## OpenAPI Documentation
 
-The OpenAPI schema is automatically updated to show 400 responses instead of 422 for validation errors. This ensures that your API documentation accurately reflects your API's behavior.
+The OpenAPI schema is automatically updated to show 400 responses instead of 422 for validation
+errors. This ensures that your API documentation accurately reflects your API's behavior.
 
 ## Advanced Usage
 
@@ -143,7 +146,8 @@ fastapi-validation-error-handler/
 └── README.md
 ```
 
-**Note:** While the PyPI package name is `fastapi-validation-error-handler` (with hyphens), the importable Python package name is `fastapi_validation_error_handler` (with underscores).
+**Note:** While the PyPI package name is `fastapi-validation-error-handler` (with hyphens), the
+importable Python package name is `fastapi_validation_error_handler` (with underscores).
 
 ## License
 

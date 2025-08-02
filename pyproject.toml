@@ -8,9 +8,9 @@ version = "0.1.0"
 description = "Custom validation error handler for FastAPI that returns HTTP 400 status codes with structured JSON responses"
 readme = "README.md"
 requires-python = ">=3.7"
-license = {file = "LICENSE"}
+license = { file = "LICENSE" }
 authors = [
-    {name = "Rohan Bokadiya", email = "rohanbokadiya855@gmail.com"},
+    { name = "Rohan Bokadiya", email = "rohanbokadiya855@gmail.com" },
 ]
 classifiers = [
     "Development Status :: 4 - Beta",

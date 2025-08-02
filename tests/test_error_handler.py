@@ -1,8 +1,9 @@
+from typing import List, Optional
+
 import pytest
 from fastapi import FastAPI, Depends
 from fastapi.testclient import TestClient
 from pydantic import BaseModel, Field, EmailStr
-from typing import List, Optional
 
 from fastapi_validation_error_handler import setup_validation_error_handling
 
