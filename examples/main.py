@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 
 from fastapi_validation_error_handler import setup_validation_error_handling
 
@@ -9,7 +9,9 @@ setup_validation_error_handling(app)
 
 class User(BaseModel):
     email: EmailStr
-    age: int
+    age: int = Field(..., gt=0)
+
+    model_config = {"extra": "forbid"}
 
 
 @app.post("/users/")
